@@ -134,16 +134,67 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	
 	$(function(){
-		contentWayPoint();
-		goToTop();
-		loaderPage();
-		fullHeight();
-		parallax();
-		// pieChart();
-		skillsWayPoint();
-	});
+		Handlebars.registerHelper("isOdd", num => num % 2 != 0);
+		Handlebars.registerHelper("isEven", num => num % 2 == 0);
+		Handlebars.registerHelper("isModN", (x, y, n) => x % y == n);
+		Handlebars.registerHelper("isLastItemOfArray", (index, array) => index == array.length - 1);
+		Handlebars.registerHelper("formatDate", (dateString, pattern) => new Date(Date.parse(dateString)).format(pattern));
+		Handlebars.registerHelper("arrayChunks", (array, size) => {
+			var result = [];
+			var lastIndex = -1;
+			array.forEach((item, index) => {
+				if(index % size == 0) result[++lastIndex] = [];
+				result[lastIndex].push(item);
+			});
+			return result;
+		});
 
+		var onPageLoad = () => {
+			contentWayPoint();
+			goToTop();
+			loaderPage();
+			fullHeight();
+			parallax();
+			// pieChart();
+			skillsWayPoint();
+		};
+
+		var loadedCount = 0;
+		var attachTemplate = (name, data, target, onLoad) => {
+			$.get(`/templates/${name}.handlebars`, templateHtml => {
+				var template = Handlebars.compile(templateHtml);
+				var compiledHtml = template(data);
+				var htmlEl = $(compiledHtml);
+				target.append(htmlEl);
+				++loadedCount;
+				onLoad();
+			});
+		};
+
+		var attachSocialCards = data => {
+			['facebook', 'twitter'].forEach(social => {
+				$.get(`/templates/social/cards/${social}.handlebars`, templateHtml => {
+					var template = Handlebars.compile(templateHtml);
+					$('head').append($(template(data)));
+				});
+			});
+		};
+
+		$.get('/js/data.json').done(data => {
+			const target = $('#page');
+			const templates = [
+				'header', 'about', 'resume', 'skills', 'strengths', 
+				'achievements', 'blogs', 'jobRequest', 'connect', 'footer'
+			];
+
+			var attachNextTemplate = () => {
+				if(loadedCount == templates.length) onPageLoad();
+				else attachTemplate(templates[loadedCount], data, target, attachNextTemplate);
+			};
+			attachNextTemplate();
+			attachSocialCards(data);
+		});
+	});
 
 }());

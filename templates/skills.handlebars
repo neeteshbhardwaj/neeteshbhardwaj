@@ -1,0 +1,39 @@
+<div id="fh5co-features" class="animate-box">
+    <div class="container">
+        <div class="services-padding">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <h2>Skills</h2>
+                </div>
+            </div>
+            {{#with (arrayChunks skills 3) as | chunks |}}
+                {{#each chunks as | chunk |}}
+                    <div class="row">	
+                    {{#each chunk}}
+                        <div class="col-md-4 text-center">
+                            <div class="feature-left">
+                                <span class="icon">
+                                    <i class="{{icon}}"></i>
+                                </span>
+                                <div class="feature-copy">
+                                    <h3>{{category}}</h3>
+                                    <p>
+                                        {{#with names as | names |}}
+                                        {{#each names}}
+                                            {{this}}
+                                            {{#unless (isLastItemOfArray @index names)}}
+                                            |
+                                            {{/unless}}
+                                        {{/each}}
+                                        {{/with}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                    </div>
+                {{/each}}
+            {{/with}}
+        </div>
+    </div>
+</div>

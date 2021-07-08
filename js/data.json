@@ -1,0 +1,272 @@
+{
+    "introduction": {
+        "name": "Neetesh Bhardwaj",
+        "title": "Software Engineer / Web Developer",
+        "image": "images/user-2.png",
+        "quote": {
+            "text": "It's hard enough to find an error in your code when you're looking for it; Its even harder when you've ASSUMED your code is ERROR-FREE.",
+            "author" : "Steve McConnell"
+        },
+        "bio": "Hi! I am Neetesh and I am passionately curious to learn new technologies and write software programs. I have survived more than 7 years in IT industry and always ready to take up new challenging assignments. So far I have explored a bit of various industry domains like telematics, video ads, electronic agreements and currently working in investment banking.",
+        "resumeFileUrl": "https://docs.google.com/document/d/1cksndrkqOgiqdVpLRB2LLQKFhpUY86bh1Lt_txmiPhc/edit?usp=sharing"
+    },
+    "contact": {
+        "mobile": "+91 880 277 3141",
+        "email": "bhardwaj.neetesh@gmail.com",
+        "website": "www.yoursite.com",
+        "socialSites": [
+            {
+                "url": "https://www.facebook.com/NeeteshBhardwaj",
+                "icon": "icon-facebook3"
+            },
+            {
+                "url": "https://www.linkedin.com/in/NeeteshBhardwaj",
+                "icon": "icon-linkedin2"
+            },
+            {
+                "url": "https://github.com/NeeteshBhardwaj",
+                "icon": "icon-github2"
+            },
+            {
+                "url": "https://stackoverflow.com/users/9098032/neetesh-bhardwaj",
+                "icon": "icon-stackoverflow"
+            }
+        ]
+    },
+    "workExperience": [
+        {
+            "organization": "Publicis Sapient",
+            "projects": [
+                {
+                    "name": "Albacore",
+                    "description": "A Data Integration project for accepting financial data from financial data publishers and supports various regulatory reporting like EMIR, MIFID, MAR, LAHRR, SFTR etc and various other subscribers for financial institutions across the globe.",
+                    "role": "Senior Software Engineer",
+                    "duration": {
+                        "from": "1-Dec-2017",
+                        "to": "10-Jun-2021"
+                    }
+                }
+            ]
+        },
+        {
+            "organization": "To The New(Intelligrape Pvt. Ltd.)",
+            "projects": [
+                {
+                    "name": "Egreement",
+                    "description": "A market leading web solution for handling and signing electronic documents. Egreement lets organizations close businesses faster, cut costs dramatically and increase sales.",
+                    "role": "Senior Software Engineer",
+                    "duration": {
+                        "from": "20-Jan-2015",
+                        "to": "24-Nov-2017"
+                    }
+                },
+                {
+                    "name": "ViralGains",
+                    "description": "A web Platform to create authentic relationships between consumers and advertisers through the power of online video. ViralGains enables viral marketing at scale by helping advertisers serve video to consumers who are most likely to socially engage with their brand.",
+                    "role": "Senior Software Engineer",
+                    "duration": {
+                        "from": "10-July-2014",
+                        "to": "20-Jan-2015"
+                    }
+                }
+            ]
+        },
+        {
+            "organization": "Chleon Automotive Pvt. Ltd.",
+            "projects": [
+                {
+                    "name": "Connexx",
+                    "description": "A vehicle tracking & management system built on the concept of connected cars. It includes a web application software to track the vehicle about Its location, Its entry or exit to a restricted geo-fence area, Its movement, Alert notification if it violates certain pre-defined rules of routes, geo-fence area, speed limit ,Collect the OBD data and generate useful reports with graphs too.",
+                    "role": "Software Engineer",
+                    "duration": {
+                        "from": "10-Mar-2013",
+                        "to": "19-Jul-2014"
+                    }
+                },
+                {
+                    "name": "Cloud Vault",
+                    "description": "A complete IVI system built on connected car concept, providing app stack, remote HeadUnit management, app management, vehicle tracking etc. The basic system consists of a server designed for talking to the HeadUnit as well as providing a web based UI for the user to manage the HeadUnit.",
+                    "role": "Software Engineer Trainee",
+                    "duration": {
+                        "from": "21-Nov-2012",
+                        "to": "10-Mar-2013"
+                    }
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "qualification": "B.Tech. (Information Technology)",
+            "institute": "BBDIT Ghaziabad, UPTU",
+            "duration": {
+                "from": "1-Aug-2008",
+                "to": "30-Jun-2012"
+            }
+        },
+        {
+            "qualification": "Intermediate",
+            "institute": "S.S. Inter College Moradabad, UP Board",
+            "duration": {
+                "from": "30-Jun-2008",
+                "to": "1-Jul-2006"
+            }
+        },
+        {
+            "qualification": "Highschool",
+            "institute": "O.R. Inter College Moradabad, UP Board",
+            "duration": {
+                "from": "30-Jun-2006",
+                "to": "1-Jul-2005"
+            }
+        }
+    ],
+    "skills": [
+        {
+            "category": "Programming Languages",
+            "icon": "icon-embed2",
+            "names": [
+                "Java",
+                "Java8",
+                "Groovy",
+                "Javascript",
+                "Shell scripting",
+                "PL/SQL"
+            ]
+        },
+        {
+            "category": "Web Development Frameworks",
+            "icon": "icon-circle-compass",
+            "names": [
+                "Spring(AOP, MVC, DATA, JMS, Integration, Batch)",
+                "Spring Boot",
+                "Hibernate",
+                "MyBatis",
+                "Grails",
+                "GPars"
+            ]
+        },
+        {
+            "category": "Integration tools/technologies",
+            "icon": "icon-link",
+            "names": [
+                "AWS(EC2, S3, SQS, RDS, Lambda, CloudFront, SAM)",
+                "IBM MQ",
+                "IBM Integration Bus",
+                "Postman",
+                "Zookeeper",
+                "Kafka"
+            ]
+        },
+        {
+            "category": "Version Controls",
+            "icon": "icon-flow-branch",
+            "names": [
+                "git",
+                "SVN"
+            ]
+        },
+        {
+            "category": "Databases",
+            "icon": "icon-database2",
+            "names": [
+                "MySQL",
+                "MongoDB",
+                "Druid",
+                "Oracle DB"
+            ]
+        },
+        {
+            "category": "Operating Systems",
+            "icon": "icon-laptop2",
+            "names": [
+                "Linux(Ubuntu)",
+                "Windows(7, 8, 10)"
+            ]
+        },
+        {
+            "category": "IDEs",
+            "icon": "icon-tools2",
+            "names": [
+                "Eclipse",
+                "STS",
+                "IntelliJ IDEA",
+                "VS Code"
+            ]
+        },
+        {
+            "category": "Testing Frameworks",
+            "icon": "icon-lab",
+            "names": [
+                "JUnit",
+                "Spock",
+                "Geb"
+            ]
+        },
+        {
+            "category": "CI/CD and Build Tools",
+            "icon": "icon-direction",
+            "names": [
+                "Jenkins",
+                "Bamboo",
+                "Maven",
+                "Gradle"
+            ]
+        }
+    ],
+    "strengths": [
+        "Motivated",
+        "Detail oriented",
+        "Dedicated",
+        "Team player",
+        "Workaholic",
+        "Loyal"
+    ],
+    "achievements": [
+        {
+            "title": "DVA-C01",
+            "description": "AWS Certified Developer - Associate",
+            "image": "images/AWS-dev.png",
+            "url": "https://drive.google.com/file/d/1xFgLGzwMTmoEOR34uA5ni-XBIZrQmY-d/view?usp=sharing"
+        },
+        {
+            "title": "M101J",
+            "description": "MongoDB for Java Developers",
+            "image": "images/university-badges-dev-lockup.png",
+            "url": "https://university.mongodb.com/course_completion/cd1a99694266458eb833330ce4364cb2"
+        },
+        {
+            "title": "M102",
+            "description": "MongoDB for DBAs",
+            "image": "images/university-badges-dba-lockup.png",
+            "url": "http://university.mongodb.com/course_completion/8577eea3f16f4bb1af2878f6f86784ce"
+        }
+    ],
+    "openForJobRequest" : {
+        "requestText" : "If you are in search of a reputable web developer with a proven track record to build quality software for your organization or clients, you're in the right place. Get in touch to discuss your needs now!"
+    },
+    "connectForm": {
+        "formId": "contactForm",
+        "action": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfbwhbi-8wZAkjiwsxUrmru-flePO2QyfS9ZuwJ0mtbkf6CkA/formResponse",
+        "reloadOnSubmit": true,
+        "afterSubmitCallback": "fn",
+        "fields": [
+            {
+                "formField": "input[id='name']",
+                "googleFormFieldName": "entry.544566488"
+            },
+            {
+                "formField": "input[id='email']",
+                "googleFormFieldName": "emailAddress"
+            },
+            {
+                "formField": "input[id='subject']",
+                "googleFormFieldName": "entry.912095259"
+            },
+            {
+                "formField": "textarea[id='message']",
+                "googleFormFieldName": "entry.481297703"
+            }
+        ]
+    }
+}

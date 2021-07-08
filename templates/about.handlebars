@@ -1,0 +1,33 @@
+<div id="fh5co-about" class="animate-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="info">
+                    <li><span class="first-block">Full Name:</span><br/><span class="second-block">{{introduction.name}}</span></li>
+                    <li><span class="first-block">Phone:</span><br/><span class="second-block">{{contact.mobile}}</span></li>
+                    <li><span class="first-block">Email:</span><br/><span class="second-block">{{contact.email}}</span></li>
+                    <li><span class="first-block">Website:</span><br/><span class="second-block">{{contact.website}}</span></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <h2>Hello There!</h2>
+                {{#with introduction.quote}}
+                <p><span class="second-block">{{text}}</span><br/><span class="second-block">- {{author}}</span></p>
+                {{/with}}
+                <p>{{introduction.bio}}</p>
+                <p>
+                    <ul class="fh5co-social-icons">
+                        {{#each contact.socialSites}}
+                        <li><a href="{{url}}" target="_blank"><i class="{{icon}}"></i></a></li>
+                        {{/each}}
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

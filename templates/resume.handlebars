@@ -1,0 +1,59 @@
+<div id="fh5co-resume" class="fh5co-bg-color">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>My Resume</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <ul class="timeline">
+                    <li class="timeline-heading text-center animate-box">
+                        <div><h3>Work Experience</h3></div>
+                    </li>
+
+                    {{#each workExperience}}
+                    <li class="{{#if (isOdd @index)}}timeline-inverted{{else}}timeline-unverted{{/if}} animate-box">
+                        <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="timeline-title">{{organization}}</h3>
+                            </div>
+                            {{#with projects as | projects |}}
+                                {{#each projects}}
+                                    <div class="timeline-body">
+                                        <span class="company">{{role}}, {{formatDate duration.from 'MMMM YYYY'}} – {{formatDate duration.to 'MMMM YYYY'}}</span>
+                                        <p><span class="first-block text-bold">{{name}} : </span>{{description}}</p>
+                                    </div>
+                                    {{#unless (isLastItemOfArray @index projects)}}
+                                    <hr/>
+                                    {{/unless}}
+                                {{/each}}
+                            {{/with}}
+                        </div>
+                    </li>
+                    {{/each}}
+
+                    <br>
+                    <li class="timeline-heading text-center animate-box">
+                        <div><h3>Education</h3></div>
+                    </li>
+                    {{#each education}}
+                    <li class="{{#if (isOdd @index)}}timeline-unverted{{else}}timeline-inverted{{/if}} animate-box">
+                        <div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="timeline-title">{{qualification}}</h3>
+                                <span class="company">{{formatDate duration.from 'YYYY'}} – {{formatDate duration.to 'YYYY'}}</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>{{institute}}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
